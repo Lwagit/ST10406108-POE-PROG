@@ -1,7 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿
 class POEPROG{
-    static void main(String[] args)
+    static void Main(String[] args)
     {
-        System.Console.WriteLine("");
+        System.Console.WriteLine("Welcome User to the Recipe App!");
+        
     }
 }
