@@ -13,6 +13,7 @@ namespace PoePart1
             Console.WriteLine("Welcome to the Recpipe App");
             Console.WriteLine();
 
+            //Created an object for class recipe
             Recipe recipe = new Recipe();
 
             int exit = -1;
