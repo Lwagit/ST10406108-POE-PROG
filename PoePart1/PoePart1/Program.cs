@@ -16,6 +16,7 @@ namespace PoePart1
             //Created an object for class recipe
             Recipe recipe = new Recipe();
 
+            //while loop
             int exit = -1;
             while (exit != 0)
             {
