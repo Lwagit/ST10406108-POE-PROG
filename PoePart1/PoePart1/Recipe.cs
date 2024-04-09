@@ -9,6 +9,7 @@ namespace PoePart1
 {
     public class Recipe
     {
+
         private Ingredients[] ingredients;
         private Steps[] steps;
         private int numOfIngredients;

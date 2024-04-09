@@ -7,6 +7,7 @@ namespace PoePart1
 {
     internal class Program
     {
+        //Main method
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Recpipe App");

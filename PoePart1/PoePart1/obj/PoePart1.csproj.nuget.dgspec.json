@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siyab\\source\\repos\\PoePart1\\PoePart1\\PoePart1.csproj": {}
+    "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\PoePart1\\PoePart1\\PoePart1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siyab\\source\\repos\\PoePart1\\PoePart1\\PoePart1.csproj": {
+    "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\PoePart1\\PoePart1\\PoePart1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siyab\\source\\repos\\PoePart1\\PoePart1\\PoePart1.csproj",
+        "projectUniqueName": "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\PoePart1\\PoePart1\\PoePart1.csproj",
         "projectName": "PoePart1",
-        "projectPath": "C:\\Users\\siyab\\source\\repos\\PoePart1\\PoePart1\\PoePart1.csproj",
+        "projectPath": "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\PoePart1\\PoePart1\\PoePart1.csproj",
         "packagesPath": "C:\\Users\\siyab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siyab\\source\\repos\\PoePart1\\PoePart1\\obj\\",
+        "outputPath": "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\PoePart1\\PoePart1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\siyab\\AppData\\Roaming\\NuGet\\NuGet.Config",
