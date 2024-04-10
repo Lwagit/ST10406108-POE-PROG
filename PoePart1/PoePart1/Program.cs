@@ -7,52 +7,59 @@ namespace PoePart1
 {
     internal class Program
     {
-        //Main method
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Recpipe App");
             Console.WriteLine();
 
-            //Created an object for class recipe
             Recipe recipe = new Recipe();
 
-            //while loop
             int exit = -1;
             while (exit != 0)
             {
-                int choseOption = recipe.ShowOptions();
+                int choice = recipe.ShowOptions();
 
-                int chosenOption = Convert.ToInt32(Console.ReadLine());
-                switch (chosenOption)
+                switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("Choose an Option:");
+                        Console.WriteLine("How many ingredients to be used?");
+                        int ingredientNumber = Convert.ToInt32(Console.ReadLine());
+
+                        for (int i = 0; i < ingredientNumber; i++)
+                        {
+                            Console.WriteLine("Enter ingredient name:");
+                            string ingredientName = Console.ReadLine();
+
+                            Console.WriteLine("Enter quantity:");
+                            int quantity;
+                            while (!int.TryParse(Console.ReadLine(), out quantity) || quantity <= 0)
+                            {
+                                Console.WriteLine("Invalid quantity. Please enter a positive integer:");
+                            }
+
+                            Console.WriteLine("Enter unit of measurement:");
+                            string unitOfMeasurement = Console.ReadLine();
+
+                            recipe.AddIngredient(ingredientName, quantity, unitOfMeasurement);
+                        }
+
+
+
                         break;
                     case 2:
-                        recipe.AddIngredient();
+                        recipe.DisplayRecipe();
                         break;
                     case 3:
-                        Console.WriteLine();
-                        recipe.DisplayRecipe();
-                        Console.ResetColor();
-                        Console.WriteLine();
+                        recipe.ScaleRecipe();
                         break;
                     case 4:
-                        Console.WriteLine(recipe.ScaleRecipe());
-                        Console.WriteLine();
-                        recipe.DisplayRecipe();
-                        Console.ResetColor();
-                        Console.WriteLine();
+                        recipe.ResetRecipe();
                         break;
                     case 5:
-                        Console.WriteLine(recipe.ScaleRecipe());
-                        Console.WriteLine();
-                        recipe.DisplayRecipe();
-                        Console.ResetColor();
-                        Console.WriteLine();
+                        recipe.ClearData();
                         break;
                     case 6:
-                        recipe.ClearData();
+
                         break;
                     case 7:
                         exit = 0;
@@ -72,4 +79,3 @@ namespace PoePart1
     }
 
 }
-

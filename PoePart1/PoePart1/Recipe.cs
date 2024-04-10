@@ -9,7 +9,6 @@ namespace PoePart1
 {
     public class Recipe
     {
-
         private Ingredients[] ingredients;
         private Steps[] steps;
         private int numOfIngredients;
@@ -31,26 +30,20 @@ namespace PoePart1
             Console.WriteLine("5.Clear Data:");
             Console.WriteLine("6.Exit:");
             Console.WriteLine("Enter your choice:");
-           
-            
+
+
             int choice = int.Parse(Console.ReadLine());
             return choice;
         }
 
-        public void AddIngredient()
-        {
-            Console.WriteLine("Enter ingredient name: ");
-            string name = Console.ReadLine();
-            Console.WriteLine("Enter quantity: ");
-            int quantity = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter unit of measurement: ");
-            string unitOfMeasurement = Console.ReadLine();
 
-            Ingredients ingredient = new Ingredients(name, quantity, unitOfMeasurement);
+        public void AddIngredient(string name, int quantity, string unitOfMeasurement)
+        {
             if (numOfIngredients < ingredients.Length)
             {
-                ingredients[numOfIngredients++] = ingredient;
-                Console.WriteLine("Ingredients added succesfully.");
+                ingredients[numOfIngredients] = new Ingredients(name, quantity, unitOfMeasurement);
+                numOfIngredients++;
+                Console.WriteLine("Ingredient added successfully.");
             }
             else
             {
@@ -61,14 +54,13 @@ namespace PoePart1
         public void DisplayRecipe()
         {
             Console.WriteLine("Recipe:");
-
             for (int i = 0; i < numOfIngredients; i++)
             {
-                Console.WriteLine($"{ingredients[i].Name}: {ingredients[i].Quantity} {ingredients[i].unitOfMeasurement}");
+                Ingredients ingredient = ingredients[i]; // Get the current ingredient
+                Console.WriteLine($"{ingredient.Name}: {ingredient.Quantity} {ingredient.unitOfMeasurement}");
             }
 
             Console.WriteLine("\nSteps:");
-
             for (int i = 0; i < numOfSteps; i++)
             {
                 Console.WriteLine($"{i + 1}. {steps[i].Description}");
@@ -109,5 +101,3 @@ namespace PoePart1
         }
     }
 }
-
-    
