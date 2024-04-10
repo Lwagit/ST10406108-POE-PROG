@@ -14,6 +14,7 @@ namespace PoePart1
             numOfIngredients = 0;
         }
 
+        //program menu
         public int ShowOptions()
         {
             Console.WriteLine("Options:");
@@ -29,6 +30,7 @@ namespace PoePart1
             return choice;
         }
 
+        //method to store or add ingredients
         public void AddIngredient(string name, int quantity, string unitOfMeasurement)
         {
             if (numOfIngredients < ingredients.Length)
@@ -43,6 +45,7 @@ namespace PoePart1
             }
         }
 
+        //method to display recipe
         public void DisplayRecipe()
         {
             Console.WriteLine("Recipe:");
@@ -53,6 +56,7 @@ namespace PoePart1
             }
         }
 
+        //scale method
         public string ScaleRecipe()
         {
             Console.WriteLine("Enter the name of ingredient you would like to scale:");

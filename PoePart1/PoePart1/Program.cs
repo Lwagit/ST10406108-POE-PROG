@@ -43,8 +43,6 @@ namespace PoePart1
                             recipe.AddIngredient(ingredientName, quantity, unitOfMeasurement);
                         }
 
-
-
                         break;
                     case 2:
                         recipe.DisplayRecipe();
@@ -57,13 +55,10 @@ namespace PoePart1
                         break;
                     case 5:
                         recipe.ClearData();
-                        break;
+                        break; 
                     case 6:
-
-                        break;
-                    case 7:
-                        exit = 0;
                         Console.WriteLine("Exiting recipe app..");
+                        Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Invalid choice,please try again.");
