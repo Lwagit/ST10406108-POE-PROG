@@ -1,9 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 namespace PoePart1
 {
+    //class for steps
     internal class Steps
     {
-        //class for steps
+        
         public object Description { get; internal set; }
     }
 }
