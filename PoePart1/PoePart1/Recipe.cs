@@ -62,7 +62,7 @@ namespace PoePart1
         //scale method
         public string ScaleRecipe()
         {
-            //ingredient name input
+            //input ingredient name 
             Console.WriteLine("Enter the name of ingredient you would like to scale:");
             string response = Console.ReadLine();
 
@@ -87,10 +87,12 @@ namespace PoePart1
             }
             else
             {
+                
                 return "Invalid name of ingredient.";
             }
         }
 
+        //reset method
         public string ResetRecipe()
         {
             //prompt to enter ingredients
