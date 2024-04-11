@@ -5,6 +5,7 @@ using System.Linq;
 
 namespace PoePart1
 {
+    //class for Program
     internal class Program
     {
         //main class comment
