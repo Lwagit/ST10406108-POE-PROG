@@ -57,9 +57,11 @@ namespace PoePart1
                         recipe.ScaleRecipe();
                         break;
                     case 4:
+                        //case for Reset
                         recipe.ResetRecipe();
                         break;
                     case 5:
+                        //case for clearing the recipe data
                         recipe.ClearData();
                         break; 
                     case 6:
