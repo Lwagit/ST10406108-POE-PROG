@@ -7,6 +7,7 @@ namespace PoePart1
 {
     internal class Program
     {
+        //main class comment
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Recpipe App");
@@ -19,6 +20,7 @@ namespace PoePart1
             {
                 int choice = recipe.ShowOptions();
 
+                //switch case or condition function
                 switch (choice)
                 {
                     case 1:
@@ -27,6 +29,7 @@ namespace PoePart1
 
                         for (int i = 0; i < ingredientNumber; i++)
                         {
+                            //promt to enter ingredient name
                             Console.WriteLine("Enter ingredient name:");
                             string ingredientName = Console.ReadLine();
 
