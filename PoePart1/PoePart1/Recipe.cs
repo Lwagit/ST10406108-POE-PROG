@@ -121,6 +121,7 @@ namespace PoePart1
             ingredients = new Ingredients[10];
             numOfIngredients = 0;
             Console.WriteLine("All data cleared. Starting a new recipe...");
+            //above,is the message displayed when all recipe data has been cleared
         }
     }
 }
