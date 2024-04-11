@@ -34,6 +34,7 @@ namespace PoePart1
         //method to store or add ingredients
         public void AddIngredient(string name, int quantity, string unitOfMeasurement)
         {
+            //if statement for adding ingredients
             if (numOfIngredients < ingredients.Length)
             {
                 ingredients[numOfIngredients] = new Ingredients(name, quantity, unitOfMeasurement);
