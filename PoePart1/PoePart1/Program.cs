@@ -67,7 +67,7 @@ namespace PoePart1
                     default:
                         Console.WriteLine("Invalid choice,please try again.");
                         break;
-
+                    //all above are the program options
 
                 }
             }
