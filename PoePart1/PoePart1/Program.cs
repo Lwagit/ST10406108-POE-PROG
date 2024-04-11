@@ -49,9 +49,11 @@ namespace PoePart1
 
                         break;
                     case 2:
+                        //case for displaying the recipe
                         recipe.DisplayRecipe();
                         break;
                     case 3:
+                        //case for Scale of recipe
                         recipe.ScaleRecipe();
                         break;
                     case 4:
