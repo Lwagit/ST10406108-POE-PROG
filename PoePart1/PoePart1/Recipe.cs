@@ -62,6 +62,7 @@ namespace PoePart1
         //scale method
         public string ScaleRecipe()
         {
+            //ingredient name input
             Console.WriteLine("Enter the name of ingredient you would like to scale:");
             string response = Console.ReadLine();
 
