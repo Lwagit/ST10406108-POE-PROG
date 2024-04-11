@@ -9,7 +9,7 @@
 
         public int storedQuantity { get; set; }
 
-        //constructor for ingredients
+        //constructor for ingredients of recipe
         public Ingredients(string name, int quantity, string unitOfMeasurement)
         {
             Name = name;
