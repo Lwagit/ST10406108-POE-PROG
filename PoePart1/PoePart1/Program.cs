@@ -10,6 +10,7 @@ namespace PoePart1
         //main class comment
         static void Main(string[] args)
         {
+            //display welcome message of recipe program
             Console.WriteLine("Welcome to the Recpipe App");
             Console.WriteLine();
 
