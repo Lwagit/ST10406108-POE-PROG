@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace PoePart1
 {
+    //class for recipe
     public class Recipe
     {
         private Ingredients[] ingredients;
