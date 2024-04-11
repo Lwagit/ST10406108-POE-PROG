@@ -33,6 +33,7 @@ namespace PoePart1
                             Console.WriteLine("Enter ingredient name:");
                             string ingredientName = Console.ReadLine();
 
+                            //promt to enter quantity
                             Console.WriteLine("Enter quantity:");
                             int quantity;
                             while (!int.TryParse(Console.ReadLine(), out quantity) || quantity <= 0)
