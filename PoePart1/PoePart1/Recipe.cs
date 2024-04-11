@@ -8,12 +8,19 @@ namespace PoePart1
     {
         private Ingredients[] ingredients;
         private int numOfIngredients;
+        private int numOfSteps;
+        private Steps [] stepsList;
 
         //method recipe 
         public Recipe()
         {
             ingredients = new Ingredients[10];
             numOfIngredients = 0;
+
+            stepsList = new Steps[10];
+            numOfSteps = 0;
+
+
         }
 
         //program menu
@@ -21,11 +28,12 @@ namespace PoePart1
         {
             Console.WriteLine("Options:");
             Console.WriteLine("1. Add ingredient");
-            Console.WriteLine("2. Display recipe");
-            Console.WriteLine("3. Scale recipe");
-            Console.WriteLine("4. Reset recipe");
-            Console.WriteLine("5. Clear Data");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("2. Steps for recipe");
+            Console.WriteLine("3. Display recipe");
+            Console.WriteLine("4. Scale recipe");
+            Console.WriteLine("5. Reset recipe");
+            Console.WriteLine("6. Clear Data");
+            Console.WriteLine("7. Exit");
             Console.WriteLine("Enter your choice:");
 
             int choice = int.Parse(Console.ReadLine());
@@ -49,14 +57,40 @@ namespace PoePart1
             }
         }
 
+        public void StepDescription()
+        {
+            Console.WriteLine("How many steps do you want to add?");
+            numOfSteps = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < numOfSteps; i++)
+            {
+                int step = 1;
+                Console.WriteLine($"Step # {step + i}");
+                string stepsDescription = Console.ReadLine();
+                stepsList[i] = new Steps(stepsDescription);
+            }
+            Console.WriteLine("Step added successfully.");
+            
+        }
+
+        
+
         //method to display recipe
         public void DisplayRecipe()
         {
             Console.WriteLine("Recipe:");
+
+            //Ir
             for (int i = 0; i < numOfIngredients; i++)
             {
                 Ingredients ingredient = ingredients[i];
                 Console.WriteLine($"{ingredient.Name}: {ingredient.Quantity} {ingredient.UnitofMeasurement}");
+            }
+
+            for (int i = 0;i < numOfSteps; i++)
+            {
+               Steps step = stepsList[i];
+               Console.WriteLine($"Step {i+1}: { step.Description}");
             }
         }
 

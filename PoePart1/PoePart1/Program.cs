@@ -50,24 +50,32 @@ namespace PoePart1
                             recipe.AddIngredient(ingredientName, quantity, unitOfMeasurement);
                         }
 
+
+                    
+                        
                         break;
-                    case 2:
+
+                    case 2://
+                        recipe.StepDescription();
+                        break;
+
+                    case 3:
                         //case for displaying the recipe
                         recipe.DisplayRecipe();
                         break;
-                    case 3:
+                    case 4:
                         //case for Scale of recipe
                         recipe.ScaleRecipe();
                         break;
-                    case 4:
+                    case 5:
                         //case for Reset
                         recipe.ResetRecipe();
                         break;
-                    case 5:
+                    case 6:
                         //case for clearing the recipe data
                         recipe.ClearData();
                         break; 
-                    case 6:
+                    case 7:
                         //case for exiting the recipe program
                         Console.WriteLine("Exiting recipe app..");
                         Environment.Exit(0);

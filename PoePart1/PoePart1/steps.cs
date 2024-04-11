@@ -2,9 +2,14 @@
 namespace PoePart1
 {
     //class for steps
-    internal class Steps
+     class  Steps
     {
-        
-        public object Description { get; internal set; }
+
+        public string Description { get; set; }
+
+        public Steps(string stepsDescription)
+        {
+            Description = stepsDescription;
+        }
     }
 }
