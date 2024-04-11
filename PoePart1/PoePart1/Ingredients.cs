@@ -1,5 +1,6 @@
 ﻿namespace PoePart1
 {
+    //class for ingredients
     public class Ingredients
     {
         public string Name { get; set; }
