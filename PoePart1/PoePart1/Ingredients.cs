@@ -3,6 +3,7 @@
     //class for ingredients
     public class Ingredients
     {
+        //declaring getters and setters
         public string Name { get; set; }
         public int Quantity { get; set; }
         public string UnitofMeasurement { get; set; }
