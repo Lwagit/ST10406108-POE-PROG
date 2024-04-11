@@ -65,6 +65,7 @@ namespace PoePart1
                         recipe.ClearData();
                         break; 
                     case 6:
+                        //case for exiting the recipe program
                         Console.WriteLine("Exiting recipe app..");
                         Environment.Exit(0);
                         break;
