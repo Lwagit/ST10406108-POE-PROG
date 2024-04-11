@@ -77,6 +77,7 @@ namespace PoePart1
                 }
                 else
                 {
+                    //message returned if scaled wrong
                     return "Invalid scaling factor. Scaling factor must be 0.5, 2, or 3.";
                 }
             }
@@ -88,6 +89,7 @@ namespace PoePart1
 
         public string ResetRecipe()
         {
+            //prompt to enter ingredients
             Console.WriteLine("Enter the name of ingredient you would like to reset:");
             string response = Console.ReadLine();
 
@@ -106,6 +108,7 @@ namespace PoePart1
             return "Recipe reset successfully.";
         }
 
+        //method to clear all the recipe data
         public void ClearData()
         {
             ingredients = new Ingredients[10];
