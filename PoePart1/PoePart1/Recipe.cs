@@ -110,11 +110,12 @@ namespace PoePart1
                 }
             }
 
-            
+            //messeage displayed if recipe reset succesfully
             return "Recipe reset successfully.";
         }
 
         //method to clear all the recipe data
+
         public void ClearData()
         {
             ingredients = new Ingredients[10];
