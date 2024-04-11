@@ -43,6 +43,7 @@ namespace PoePart1
             }
             else
             {
+                //else statement that sends message that says cannot add anymore ingredients
                 Console.WriteLine("Maximum capacity reached. Cannot add more ingredients.");
             }
         }
