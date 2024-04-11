@@ -9,7 +9,7 @@ namespace PoePart1
         private Ingredients[] ingredients;
         private int numOfIngredients;
 
-        //recipe method
+        //method for recipe
         public Recipe()
         {
             ingredients = new Ingredients[10];
