@@ -10,11 +10,14 @@
 
         public int storedQuantity { get; set; }
 
+        public string storedUnitofMeasurement { get; set; }
+
         //constructor for ingredients of recipe
         public Ingredients(string name, int quantity, string unitOfMeasurement)
         {
             Name = name;
             storedQuantity = quantity;
+            storedUnitofMeasurement = unitOfMeasurement;
             Quantity = quantity;
             UnitofMeasurement = unitOfMeasurement;
         }
