@@ -1,0 +1,5 @@
+Ankita Saini (2020) Switch Statement in C# Available at:https:https://www.geeksforgeeks.org/switch-statement-in-c-sharp/ (Accessed: 13 March 2024)
+
+BillWagner (2023) Exception-handling statements - throw, try-catch, try-finally, and try-catch-finally  Available at:https:https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/exception-handling-statements (Accessed: 20 March 2024)
+
+TutorialsTeacher (2023) C# - while Loop  Available at:https:https:https://www.tutorialsteacher.com/csharp/csharp-while-loop(Accessed: 20 March 2024)
