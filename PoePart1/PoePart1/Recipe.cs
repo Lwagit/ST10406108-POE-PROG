@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace PoePart1
@@ -46,14 +46,21 @@ namespace PoePart1
             //if statement for adding ingredients
             if (numOfIngredients < ingredients.Length)
             {
+                //function to add ingredients
                 ingredients[numOfIngredients] = new Ingredients(name, quantity, unitOfMeasurement);
                 numOfIngredients++;
+                Console.BackgroundColor = ConsoleColor.Green;
                 Console.WriteLine("Ingredient added successfully.");
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ResetColor();
             }
             else
             {
                 //else statement that sends message that says cannot add anymore ingredients
+                Console.BackgroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("Maximum capacity reached. Cannot add more ingredients.");
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ResetColor();
             }
         }
 
@@ -69,7 +76,11 @@ namespace PoePart1
                 string stepsDescription = Console.ReadLine();
                 stepsList[i] = new Steps(stepsDescription);
             }
+            Console.BackgroundColor = ConsoleColor.Green;
             Console.WriteLine("Step added successfully.");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ResetColor();
+            Console.ResetColor();
             
         }
 
@@ -111,20 +122,28 @@ namespace PoePart1
                 if (double.TryParse(Console.ReadLine(), out factor) && (factor == 0.5 || factor == 2 || factor == 3))
                 {
                     // Scale the quantity of the ingredient
-                   ingredientToScale.Quantity = (int)(ingredientToScale.Quantity * factor);
+                    ingredientToScale.Quantity = (int)(ingredientToScale.Quantity * factor);
+
+                    
                     return "Recipe scaled successfully.";
+                    
                 }
                 else
                 {
                     //message returned if scaled wrong
+                    
                     return "Invalid scaling factor. Scaling factor must be 0.5, 2, or 3.";
+                   
                 }
             }
             else
             {
-                
+                Console.BackgroundColor = ConsoleColor.Red;
                 return "Invalid name of ingredient.";
+                Console.ResetColor () ;
             }
+
+           
         }
 
         //reset method
@@ -146,7 +165,9 @@ namespace PoePart1
             }
 
             //messeage displayed if recipe reset succesfully
+            Console.BackgroundColor = ConsoleColor.Green;
             return "Recipe reset successfully.";
+            Console.ResetColor() ;  
         }
 
         //method to clear all the recipe data
@@ -155,8 +176,11 @@ namespace PoePart1
         {
             ingredients = new Ingredients[10];
             numOfIngredients = 0;
+            Console.BackgroundColor = ConsoleColor.Yellow;
             Console.WriteLine("All data cleared. Starting a new recipe...");
             //above,is the message displayed when all recipe data has been cleared
+            Console.BackgroundColor = ConsoleColor.Black;
+                Console.ResetColor();
         }
     }
 }
