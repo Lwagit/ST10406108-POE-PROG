@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +12,7 @@ namespace PoePart1
         //main class comment
         static void Main(string[] args)
         {
+
             //display welcome message of recipe program
             Console.WriteLine("Welcome to the Recpipe App");
             Console.WriteLine();
@@ -41,7 +42,9 @@ namespace PoePart1
                             int quantity;
                             while (!int.TryParse(Console.ReadLine(), out quantity) || quantity <= 0)
                             {
+                                Console.BackgroundColor = ConsoleColor.Magenta;
                                 Console.WriteLine("Invalid quantity. Please enter a positive integer:");
+                                Console.ResetColor();
                             }
 
                             Console.WriteLine("Enter unit of measurement:");
@@ -50,12 +53,10 @@ namespace PoePart1
                             recipe.AddIngredient(ingredientName, quantity, unitOfMeasurement);
                         }
 
-
-                    
-                        
                         break;
 
-                    case 2://
+                    case 2:
+                        //case for steps of recipe
                         recipe.StepDescription();
                         break;
 
