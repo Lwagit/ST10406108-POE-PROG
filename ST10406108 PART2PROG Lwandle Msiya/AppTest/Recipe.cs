@@ -1,7 +1,9 @@
 ﻿namespace RecipeApp.RecipeApp
 {
+    //class for recipe
     internal class Recipe
     {
+        //constructor
             public string Title { get; }
             public List<Ingredient> Ingredients { get; } = new List<Ingredient>();
         public List<string> Steps { get; } = new List<string>();
@@ -11,11 +13,13 @@
                 Title = title;
             }
 
+        //adding steps
         public void AddStep(string step)
         {
             Steps.Add(step);
         }
 
+        //adding to list
         public override string ToString()
         {
             string ingredientList = string.Join("\n", Ingredients.Select(ingredient => $"- {ingredient}"));
@@ -27,6 +31,7 @@
         {
         }
 
+        //add ingredient method
         public void AddIngredient(Ingredient ingredient)
             {
                 Ingredients.Add(ingredient);

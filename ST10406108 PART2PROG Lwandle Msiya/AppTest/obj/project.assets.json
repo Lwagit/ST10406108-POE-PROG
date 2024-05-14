@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\siyab\\source\\repos\\AppTest\\AppTest\\AppTest.csproj",
+      "projectUniqueName": "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\ST10406108 PART2PROG Lwandle Msiya\\AppTest\\AppTest.csproj",
       "projectName": "AppTest",
-      "projectPath": "C:\\Users\\siyab\\source\\repos\\AppTest\\AppTest\\AppTest.csproj",
+      "projectPath": "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\ST10406108 PART2PROG Lwandle Msiya\\AppTest\\AppTest.csproj",
       "packagesPath": "C:\\Users\\siyab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\siyab\\source\\repos\\AppTest\\AppTest\\obj\\",
+      "outputPath": "C:\\Users\\siyab\\Source\\Repos\\Lwagit\\ST10406108-POE-PROG\\ST10406108 PART2PROG Lwandle Msiya\\AppTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\siyab\\AppData\\Roaming\\NuGet\\NuGet.Config",

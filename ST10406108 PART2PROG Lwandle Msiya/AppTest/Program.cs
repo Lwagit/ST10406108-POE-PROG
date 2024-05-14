@@ -9,10 +9,12 @@ namespace RecipeApp
 
     namespace RecipeApp
     {
+        //RecipeApp class
         public class RecipeApp
         {
             private static List<Recipe> _recipes = new List<Recipe>();
 
+            //welcome message to app
             public static void Main()
             {
                 Console.WriteLine("Welcome to the Recipe App!");
@@ -23,6 +25,7 @@ namespace RecipeApp
                 }
             }
 
+            //menu display
             private static void DisplayMainMenu()
             {
                 Console.WriteLine("\nMenu:");
@@ -31,7 +34,7 @@ namespace RecipeApp
                 Console.WriteLine("3. Exit");
 
                 int choice = GetIntegerInput("Enter your choice (1-3): ", 1, 3);
-
+                //switch case
                 switch (choice)
                 {
                     case 1:
@@ -53,6 +56,8 @@ namespace RecipeApp
                 }
             }
 
+
+            //entering details of recipe
             private static void CreateNewRecipe()
             {
                 Console.WriteLine("\nEnter details for the new recipe:");
@@ -73,6 +78,7 @@ namespace RecipeApp
                 Console.WriteLine("Recipe added successfully!");
             }
 
+            //entering ingredients
             private static Ingredient CreateNewIngredient()
             {
                 Console.WriteLine("\nEnter details for the ingredient:");
@@ -87,6 +93,7 @@ namespace RecipeApp
                 return new Ingredient(ingredientName, ingredientQuantity, ingredientUnit, foodGroup, calories , steps);
             }
 
+            //display of recipes
             private static void DisplayAllRecipes()
             {
                 Console.WriteLine("\nAll Recipes:");
@@ -96,12 +103,14 @@ namespace RecipeApp
                 }
             }
 
+            //string input
             private static string GetStringInput(string prompt)
             {
                 Console.Write(prompt);
                 return Console.ReadLine();
             }
 
+            //double int input
             private static double GetDoubleInput(string prompt)
             {
                 while (true)
@@ -114,6 +123,7 @@ namespace RecipeApp
                 }
             }
 
+            //integer input
             private static int GetIntegerInput(string prompt, int minValue, int maxValue = int.MaxValue)
             {
                 while (true)
@@ -126,6 +136,7 @@ namespace RecipeApp
                 }
             }
 
+            //'yes or no' input
             private static bool GetYesNoInput(string prompt)
             {
                 while (true)

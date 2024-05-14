@@ -1,5 +1,6 @@
 ﻿namespace RecipeApp.RecipeApp
 {
+    //ingredient class
     internal class Ingredient
     {
             public string Name { get; }
@@ -8,6 +9,7 @@
             public string FoodGroup { get; }
             public int Calories { get; }
 
+        //ingredient method
             public Ingredient(string name, double quantity, string unit, string foodGroup, int calories, string steps)
             {
                 Name = name;
@@ -17,6 +19,7 @@
                 Calories = calories;
             }
 
+        //override
             public override string ToString()
             {
                 return $"{Quantity} {Unit} of {Name} ({FoodGroup}, {Calories} calories)";
