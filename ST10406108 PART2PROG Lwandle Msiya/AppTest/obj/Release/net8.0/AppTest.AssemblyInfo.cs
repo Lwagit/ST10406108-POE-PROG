@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2b92769a3b4105107e2cdd2acefb8a43fbbdfbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

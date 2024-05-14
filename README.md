@@ -17,5 +17,11 @@
 1.Go the terminal and run this command 
 2. 
 
+###Updated 
+
+-Updated functions.
+-Overall, this recipe application provides a simple way for users to manage and access cooking recipes.
+-including the ability to input detailed ingredient information and cooking instructions.
+
 ## License 
 [MIT] ()
