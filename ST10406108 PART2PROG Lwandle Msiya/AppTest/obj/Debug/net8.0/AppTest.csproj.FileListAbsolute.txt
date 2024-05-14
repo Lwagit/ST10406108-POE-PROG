@@ -1,0 +1,14 @@
+C:\Users\siyab\source\repos\AppTest\AppTest\bin\Debug\net8.0\AppTest.exe
+C:\Users\siyab\source\repos\AppTest\AppTest\bin\Debug\net8.0\AppTest.deps.json
+C:\Users\siyab\source\repos\AppTest\AppTest\bin\Debug\net8.0\AppTest.runtimeconfig.json
+C:\Users\siyab\source\repos\AppTest\AppTest\bin\Debug\net8.0\AppTest.dll
+C:\Users\siyab\source\repos\AppTest\AppTest\bin\Debug\net8.0\AppTest.pdb
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.AssemblyInfoInputs.cache
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.AssemblyInfo.cs
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.csproj.CoreCompileInputs.cache
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.dll
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\refint\AppTest.dll
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.pdb
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\AppTest.genruntimeconfig.cache
+C:\Users\siyab\source\repos\AppTest\AppTest\obj\Debug\net8.0\ref\AppTest.dll
